@@ -1,0 +1,22 @@
+//
+// Hacks - Scrollbar
+//
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 50px;
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #111;
+}
