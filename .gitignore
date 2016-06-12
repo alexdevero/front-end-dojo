@@ -1,2 +1,56 @@
-.sass-cache/
-*.css.map
+# Folders for inspiration and notes #
+#####################################
+_moodboard/
+_notes/
+
+# Windows & Mac file caches #
+#############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Folder config file #
+######################
+Desktop.ini
+
+# Windows shortcuts #
+#####################
+*.lnk
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Photoshop and Illustrator files #
+###################################
+*.ai
+*.eps
+*.psd
+
+# SublimeText cache files #
+###########################
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+*.*.cache
+
+# Development folders and files #
+#################################
+.tmp/
+dist/
+node_modules/
+logs/
+*.log
+npm-debug.log*
+.npm
