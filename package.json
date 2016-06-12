@@ -1,0 +1,27 @@
+{
+  "name": "cssdojo",
+  "version": "0.0.1",
+  "description": "Library full of useful CSS and Sass functions, mixins, utilities, hacks, etc.",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexdevero/CSSDojo.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "functions",
+    "mixins",
+    "utilities",
+    "hacks",
+    "helpers"
+  ],
+  "author": "@alexdevero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexdevero/CSSDojo/issues"
+  },
+  "homepage": "https://github.com/alexdevero/CSSDojo#readme"
+}
