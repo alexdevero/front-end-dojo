@@ -1,6 +1,6 @@
 {
   "name": "cssdojo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library full of useful CSS and Sass functions, mixins, utilities, hacks, etc.",
   "scripts": {
     "test": "test"
