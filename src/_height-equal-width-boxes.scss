@@ -1,0 +1,61 @@
+//
+// Height equals width with pure CSS
+// If you have an image with a certain aspect ratio you can easily keep the proportion with the "auto" value. Like:
+//
+
+img{
+  min-width: 100%;
+  height: auto;
+}
+
+// The problem is that you can't use the "auto" value for the height property of a block element like a DIV or alike. It will always resize depending on the inner content/elements.
+//
+// HTML
+// <div class='box'> 
+//  <div class='content'>Aspect ratio of 1:1</div> 
+// </div>
+
+// You need two block elements to achieve the desired behaviour.
+
+CSS
+.box {
+  position: relative;
+  width: 50%; /* desired width */
+}
+
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* initial ratio of 1:1*/
+}
+
+// We define a pseudo element for our box and give it a margin-top of 100%. Since this 100% value relates to the element's width... you get it (height: 0; padding-bottom: 100%; would also work, but then you have to adjust the padding-bottom value every time you change the width).
+
+// Our box is already as high as wide. If you only want to display some colored tiles, you are already done. But since the user experience is way better if you also provide some content we add a content element to our box.
+
+// THE CONTENT
+// And here is the trick: We just position the content element as absolute with all four orientations set to 0. This just covers the parent element completely, no matter which size it has.
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// OTHER ASPECT RATIOS
+// If you want to create other ratios just change the padding-top value of the pseudo element (see example):
+
+.ratio2_1:before {
+  padding-top: 50%;
+}
+.ratio1_2:before {
+  padding-top: 200%;
+}
+.ratio4_3:before {
+  padding-top: 75%;
+}
+.ratio16_9:before {
+  padding-top: 56.25%;
+}
