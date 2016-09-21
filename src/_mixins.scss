@@ -33,6 +33,16 @@
   }
 }
 
+// Mixin for box-shadow used on stripe.com
+@mixin boxShadowStripe($level) {
+  @if $level == 1 {
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  }
+  @else if level == 2 {
+    box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+  }
+}
+
  // Mixin for retina display media query
 
 @mixin retina {
