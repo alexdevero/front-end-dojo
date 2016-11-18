@@ -1,5 +1,5 @@
 # Front-End Dojo
-Library full of useful CSS and Sass functions, mixins, utilities, etc.
+Library full of useful CSS, JS and Sass functions, mixins and utilities.
 
 ## Download
 **Install with npm**
