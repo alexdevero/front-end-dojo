@@ -2,8 +2,6 @@
 const fadeIn = (element) => {
   let elementOpacity = 0.1;// initial opacity
 
-  element.style.display = 'block';
-
   let timer = setInterval(function () {
     if (elementOpacity >= 1){
       clearInterval(timer);
@@ -12,6 +10,8 @@ const fadeIn = (element) => {
     element.style.opacity = elementOpacity;
 
     elementOpacity += elementOpacity * 0.1;
+
+    element.style.display = 'block';
   }, 15);
 }
 
