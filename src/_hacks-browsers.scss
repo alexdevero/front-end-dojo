@@ -36,7 +36,7 @@ _:-webkit-full-screen,
   property:value;
 }
 
-/* Hacnk for IE 10+ */
+/* Hack for IE 10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
    .your-selector {
     porperty: value;
@@ -44,7 +44,6 @@ _:-webkit-full-screen,
 }
 
 /* Hack for IE 9, 10 & 11 */
-
 @media screen and (min-width:0\0) { 
   .your-selector {
     property:value;
@@ -52,7 +51,6 @@ _:-webkit-full-screen,
 }
 
 /* Hack for FireFox 3 and Up */
-
 html > /**/ body .someClass,
 x:-moz-any-link,
 x:default {
@@ -60,7 +58,6 @@ x:default {
 }
 
 /* Hack for Firefox 46+ */
-
 _:-moz-tree-row(hover),
 _::backdrop,
 .your-selector {
@@ -68,7 +65,6 @@ _::backdrop,
 }
 
 /* Hack for Firefox 46+ */
-
 @supports (-moz-appearance:none) and (text-emphasis: none) {
   .your-selector {
     property: value;
@@ -76,7 +72,6 @@ _::backdrop,
 }
 
 /* Hack for Firefox 45+ */
-
 @supports (-moz-appearance:none) and (word-spacing: 100%) {
   .your-selector {
     property: value;
@@ -84,7 +79,6 @@ _::backdrop,
 }
 
 /* Hack for any FireFox */
-
 _:-moz-tree-row(hover),
 .your-selector {
   property:value;
@@ -96,7 +90,6 @@ _:-moz-any-link,
 }
 
 /* Hack for Chrome and Safari (and Opera 14+) */
-
 .your-selector:not(*:root) {
   property:value;
 }
@@ -112,13 +105,11 @@ _:not(*:root),
 }
 
 /* Hack for Opera 9.5-12, Opera Mini 7.x (Opera 9.80) */
-
 _:-o-prefocus, :root .your-selector {
   property:value;
 }
 
 /* Hack for Opera 11-, Opera Mini 7.x (Opera 9.80) */
-
 @media all and (-webkit-min-device-pixel-ratio: 10000),
 not all and (-webkit-min-device-pixel-ratio: 0) {
   .your-selector { property:value; }
