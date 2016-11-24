@@ -1,4 +1,7 @@
 (() => {
+  // Anchor is link or links with id of element
+  // you want to scroll to defined as value of 'href' attribute
+  // Duration if time in seconds determining the speed of scroll
   const smoothScroll = (anchor, duration) => {
     // Get starting location
     const startLocation = window.pageYOffset;
