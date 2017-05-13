@@ -3,14 +3,12 @@
 //
 
 // Hack for Safari 7.1+
-
 _::-webkit-full-page-media, _:future,
 .your-selector {
   property:value;
 }
 
 // Hack for Safari 9+
-
 _::-webkit-:not(:root:root),
 .your-selector {
   property:value;
@@ -22,8 +20,7 @@ _::-webkit-:not(:root:root),
   }
 }
 
-/* Hack for Edge Browser 12+ for Windows 10 (all MS Edge) */
-
+// Hack for Edge Browser 12+ for Windows 10 (all MS Edge)
 @supports (-ms-accelerator:true) {
   .your-selector {
     property:value;
@@ -36,49 +33,49 @@ _:-webkit-full-screen,
   property:value;
 }
 
-/* Hack for IE 10+ */
+// Hack for IE 10+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
    .your-selector {
     porperty: value;
   }
 }
 
-/* Hack for IE 9, 10 & 11 */
+// Hack for IE 9, 10 & 11
 @media screen and (min-width:0\0) { 
   .your-selector {
     property:value;
   }
 }
 
-/* Hack for FireFox 3 and Up */
+// Hack for FireFox 3 and up
 html > /**/ body .someClass,
 x:-moz-any-link,
 x:default {
   property:value;
 }
 
-/* Hack for Firefox 46+ */
+// Hack for Firefox 46+
 _:-moz-tree-row(hover),
 _::backdrop,
 .your-selector {
   property: value;
 }
 
-/* Hack for Firefox 46+ */
+// Hack for Firefox 46+
 @supports (-moz-appearance:none) and (text-emphasis: none) {
   .your-selector {
     property: value;
   }
 }
 
-/* Hack for Firefox 45+ */
+// Hack for Firefox 45+
 @supports (-moz-appearance:none) and (word-spacing: 100%) {
   .your-selector {
     property: value;
   }
 }
 
-/* Hack for any FireFox */
+// Hack for any FireFox
 _:-moz-tree-row(hover),
 .your-selector {
   property:value;
@@ -89,7 +86,7 @@ _:-moz-any-link,
   property:value;
 }
 
-/* Hack for Chrome and Safari (and Opera 14+) */
+// Hack for Chrome and Safari (and Opera 14+)
 .your-selector:not(*:root) {
   property:value;
 }
@@ -104,12 +101,12 @@ _:not(*:root),
   property:value;
 }
 
-/* Hack for Opera 9.5-12, Opera Mini 7.x (Opera 9.80) */
+// Hack for Opera 9.5-12, Opera Mini 7.x (Opera 9.80)
 _:-o-prefocus, :root .your-selector {
   property:value;
 }
 
-/* Hack for Opera 11-, Opera Mini 7.x (Opera 9.80) */
+// Hack for Opera 11-, Opera Mini 7.x (Opera 9.80)
 @media all and (-webkit-min-device-pixel-ratio: 10000),
 not all and (-webkit-min-device-pixel-ratio: 0) {
   .your-selector { property:value; }
