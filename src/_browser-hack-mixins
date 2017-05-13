@@ -1,0 +1,41 @@
+// Mixin for browser hack for IE 6, 7, 8
+@mixin hack-ie-down {
+  @media \0screen\,screen\9 {
+    @content;
+  }
+}
+// usage: @include hack-ie-down { background: #000; }
+
+// Mixin for browser hack for IE 8, 9 and 10
+@mixin hack-ie-middle {
+  @media screen\0 {
+    @content;
+  }
+}
+// usage: @include hack-ie-middle { background: #000; }
+
+// Mixin for browser hack for IE 9, 10
+@mixin hack-ie-up {
+  @media screen and (min-width:0\0) {
+    @content;
+  }
+}
+// usage: @include hack-ie-up { background: #000; }
+
+// Mixin for browser hack for IE 10+
+@mixin hack-ie-10($selector) {
+  _:-ms-lang(x),
+  :root #{$selector} {
+    @content;
+  }
+}
+// usage: @include hack-ie-10(".btn") { background: #000; }
+
+// Mixin for browser hack for IE 11+
+@mixin hack-ie-11($selector) {
+  _:-ms-fullscreen,
+  :root #{$selector} {
+    @content;
+  }
+}
+// usage: @include hack-ie-11(".btn") { background: #000; }
