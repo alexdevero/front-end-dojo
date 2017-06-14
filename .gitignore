@@ -36,15 +36,6 @@ Desktop.ini
 *.eps
 *.psd
 
-# SublimeText cache files #
-###########################
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-*.*.cache
-
 # Development folders and files #
 #################################
 .tmp/
