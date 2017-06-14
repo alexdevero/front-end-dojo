@@ -1,21 +1,24 @@
-# Folders for inspiration and notes #
-#####################################
-_moodboard/
-_notes/
-
-# Windows & Mac file caches #
-#############################
-.DS_Store
-Thumbs.db
-ehthumbs.db
+# Development folders and files #
+#################################
+.tmp/
+dist/
+node_modules/
 
 # Folder config file #
 ######################
 Desktop.ini
 
-# Windows shortcuts #
-#####################
-*.lnk
+# Folders for inspiration & notes #
+###################################
+_moodboard/
+_notes/
+
+# Log files & folders #
+#######################
+logs/
+*.log
+npm-debug.log*
+.npm
 
 # Packages #
 ############
@@ -30,18 +33,18 @@ Desktop.ini
 *.tar
 *.zip
 
-# Photoshop and Illustrator files #
-###################################
+# Photoshop & Illustrator files #
+#################################
 *.ai
 *.eps
 *.psd
 
-# Development folders and files #
-#################################
-.tmp/
-dist/
-node_modules/
-logs/
-*.log
-npm-debug.log*
-.npm
+# Windows & Mac file caches #
+#############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Windows shortcuts #
+#####################
+*.lnk
