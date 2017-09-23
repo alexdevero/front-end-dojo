@@ -39,3 +39,13 @@
   }
 }
 // usage: @include hack-ie-11(".btn") { background: #000; }
+
+// Mixin for browser hack for IE 10 & 11
+@mixin hack-ie-10-11($selector) {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	  #{$selector} {
+      @content;
+    }
+  }
+}
+// usage: @include hack-ie-10-11(".btn") { background: #000; }
