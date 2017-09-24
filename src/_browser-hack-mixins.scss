@@ -49,3 +49,12 @@
   }
 }
 // usage: @include hack-ie-10-11(".btn") { background: #000; }
+
+// Mixin for browser hack for Firefox
+@mixin hack-ff($selector) {
+@media (min--moz-device-pixel-ratio:0) {
+  #{$selector} {
+      @content;
+    }
+  }
+}
