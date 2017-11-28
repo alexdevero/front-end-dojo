@@ -36,11 +36,11 @@
     "yarn": ">=1.x.x"
   },
   "scripts": {
-    "test": "test"
+    "test": "set NODE_ENV=test && eslint ./src/javascript/*.js && csslint ./src/css/*.css && sass-lint -v -q ./src/sass/*.scss"
   },
   "devDependencies": {
-    "csslint": "^1.0.5",
     "eslint": "^4.12.0",
-    "sass-lint": "^1.12.1"
+    "sass-lint": "^1.12.1",
+    "stylelint": "^8.3.1"
   }
 }
