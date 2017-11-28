@@ -6,14 +6,41 @@
 </p>
 
 # Front-End Dojo
-Library full of useful CSS, JS and Sass functions, mixins and utilities.
 
-## Download
-**Install with npm**
-```sh
-$ npm install cssdojo
+Library full of useful CSS, Sass, Styled-components, JavaScript, React functions, mixins, utilities, etc.
+
+### Table of contents
+
+* [Install](#install)
+* [Usage](#usage)
+* [Code of Conduct](#code-of-conduct)
+* [License](#license)
+
+### Install
+
+#### Download
+```
+npm install --save-dev front-end-dojo
+```
+or
+```
+yarn add -D front-end-dojo
 ```
 
-## License
-Created by [Alex Devero](http://www.alexdevero.com). Licensed under the [MIT License](https://github.com/alexdevero/CSSDojo/blob/master/LICENSE).
+#### Clone this repo
 
+```
+git clone https://github.com/alexdevero/front-end-dojo.git
+```
+
+### Usage
+
+Pick, import and use any snippet you want.
+
+### Code of Conduct
+
+[Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+
+### License
+
+MIT © [Alex Devero](https://alexdevero.com).
