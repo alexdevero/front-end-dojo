@@ -1,57 +1,56 @@
-//
 // Hacks - Browsers
-//
 
 // Hack for Safari 7.1+
-_::-webkit-full-page-media, _:future,
+_::-webkit-full-page-media,
+_:future,
 .your-selector {
-  property:value;
+  property: value;
 }
 
 // Hack for Safari 9+
 _::-webkit-:not(:root:root),
 .your-selector {
-  property:value;
+  property: value;
 }
 
-@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
   .your-selector {
-    property:value;
+    property: value;
   }
 }
 
 // Hack for Edge Browser 12+ for Windows 10 (all MS Edge)
-@supports (-ms-accelerator:true) {
+@supports (-ms-accelerator: true) {
   .your-selector {
-    property:value;
+    property: value;
   }
 }
 
 _:-ms-lang(x),
 _:-webkit-full-screen,
 .your-selector {
-  property:value;
+  property: value;
 }
 
 // Hack for IE 10+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-   .your-selector {
+  .your-selector {
     porperty: value;
   }
 }
 
 // Hack for IE 9, 10 & 11
-@media screen and (min-width:0\0) { 
+@media screen and (min-width: 0\0) {
   .your-selector {
-    property:value;
+    property: value;
   }
 }
 
 // Hack for FireFox 3 and up
-html > /**/ body .someClass,
+html > /**/ body .some-class,
 x:-moz-any-link,
 x:default {
-  property:value;
+  property: value;
 }
 
 // Hack for Firefox 46+
@@ -62,14 +61,14 @@ _::backdrop,
 }
 
 // Hack for Firefox 46+
-@supports (-moz-appearance:none) and (text-emphasis: none) {
+@supports (-moz-appearance: none) and (text-emphasis: none) {
   .your-selector {
     property: value;
   }
 }
 
 // Hack for Firefox 45+
-@supports (-moz-appearance:none) and (word-spacing: 100%) {
+@supports (-moz-appearance: none) and (word-spacing: 100%) {
   .your-selector {
     property: value;
   }
@@ -78,36 +77,38 @@ _::backdrop,
 // Hack for any FireFox
 _:-moz-tree-row(hover),
 .your-selector {
-  property:value;
+  property: value;
 }
 
 _:-moz-any-link,
 :root .your-selector {
-  property:value;
+  property: value;
 }
 
 // Hack for Chrome and Safari (and Opera 14+)
 .your-selector:not(*:root) {
-  property:value;
+  property: value;
 }
 
 _:-webkit-any-link,
 :root .your-selector {
-  property:value;
+  property: value;
 }
 
 _:not(*:root),
 .your-selector {
-  property:value;
+  property: value;
 }
 
 // Hack for Opera 9.5-12, Opera Mini 7.x (Opera 9.80)
-_:-o-prefocus, :root .your-selector {
-  property:value;
+_:-o-prefocus,
+:root .your-selector {
+  property: value;
 }
 
 // Hack for Opera 11-, Opera Mini 7.x (Opera 9.80)
-@media all and (-webkit-min-device-pixel-ratio: 10000),
-not all and (-webkit-min-device-pixel-ratio: 0) {
-  .your-selector { property:value; }
+@media all and (-webkit-min-device-pixel-ratio: 10000), not all and (-webkit-min-device-pixel-ratio: 0) {
+  .your-selector {
+    property: value;
+  }
 }

@@ -1,3 +1,5 @@
+// Browser hack mixins
+
 // Mixin for browser hack for IE 6, 7, 8
 @mixin hack-ie-down {
   @media \0screen\,screen\9 {
@@ -16,7 +18,7 @@
 
 // Mixin for browser hack for IE 9, 10
 @mixin hack-ie-up {
-  @media screen and (min-width:0\0) {
+  @media screen and (min-width: 0\0) {
     @content;
   }
 }
@@ -43,7 +45,7 @@
 // Mixin for browser hack for IE 10 & 11
 @mixin hack-ie-10-11($selector) {
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	  #{$selector} {
+    #{$selector} {
       @content;
     }
   }
@@ -52,8 +54,8 @@
 
 // Mixin for browser hack for Firefox
 @mixin hack-ff($selector) {
-@media (min--moz-device-pixel-ratio:0) {
-  #{$selector} {
+  @media (min--moz-device-pixel-ratio: 0) {
+    #{$selector} {
       @content;
     }
   }

@@ -3,7 +3,7 @@
 // If you have an image with a certain aspect ratio you can easily keep the proportion with the "auto" value. Like:
 //
 
-img{
+img {
   min-width: 100%;
   height: auto;
 }
@@ -12,8 +12,8 @@ img{
 // It will always resize depending on the inner content/elements.
 //
 // HTML
-// <div class='box'> 
-//  <div class='content'>Aspect ratio of 1:1</div> 
+// <div class='box'>
+//  <div class='content'>Aspect ratio of 1:1</div>
 // </div>
 
 // You need two block elements to achieve the desired behaviour.
@@ -21,12 +21,12 @@ img{
 .box {
   position: relative;
   width: 50%; /* desired width */
-}
 
-.box:before {
-  content: "";
-  display: block;
-  padding-top: 100%; /* initial ratio of 1:1*/
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* initial ratio of 1:1*/
+  }
 }
 
 // We define a pseudo element for our box and give it a margin-top of 100%. Since this 100% value relates to the element's width...
@@ -49,16 +49,26 @@ img{
 
 // OTHER ASPECT RATIOS
 // If you want to create other ratios just change the padding-top value of the pseudo element (see example):
+.ratio2-1 {
+  &:before {
+    padding-top: 50%;
+  }
+}
 
-.ratio2_1:before {
-  padding-top: 50%;
+.ratio1-2 {
+  &:before {
+    padding-top: 200%;
+  }
 }
-.ratio1_2:before {
-  padding-top: 200%;
+
+.ratio4-3 {
+  &:before {
+    padding-top: 75%;
+  }
 }
-.ratio4_3:before {
-  padding-top: 75%;
-}
-.ratio16_9:before {
-  padding-top: 56.25%;
+
+.ratio16-9 {
+  &:before {
+    padding-top: 56.25%;
+  }
 }

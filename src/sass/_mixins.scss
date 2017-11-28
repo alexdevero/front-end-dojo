@@ -1,19 +1,9 @@
-//
 // Mixins
-//
 
-
- // Mixin for retina display media query
-
+// Mixin for retina display media query
 @mixin retina {
-  @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-     @content;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    @content;
   }
 }
 
@@ -21,19 +11,19 @@
 // $triangle-size - Used to set border-size. No default, set a px or em size.
 // $triangle-color - Used to set border-color which makes up triangle. No default
 // $triangle-direction - Used to determine which direction triangle points. Options: top, bottom, left, right
-
 @mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 0;
   border: inset $triangle-size;
+
   @if ($triangle-direction == top) {
-    border-color: $triangle-color transparent transparent transparent;
+    border-color: $triangle-color transparent transparent;
     border-top-style: solid;
   }
   @if ($triangle-direction == bottom) {
-    border-color: transparent transparent $triangle-color transparent;
+    border-color: transparent transparent $triangle-color;
     border-bottom-style: solid;
   }
   @if ($triangle-direction == left) {
@@ -46,9 +36,7 @@
   }
 }
 
-
 // Mixin for vertical centering
-
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
