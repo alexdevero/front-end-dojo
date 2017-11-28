@@ -1,4 +1,5 @@
 {
+  "defaultSeverity": "warning",
   "rules": {
     # "at-rule-blacklist": string|[],
     "at-rule-empty-line-before": "always",
@@ -23,7 +24,7 @@
     "color-hex-case": "lower",
     "color-hex-length": "short",
     # "color-named": "always-where-possible"|"never",
-    "color-no-hex": false,
+    # "color-no-hex": true,
     "color-no-invalid-hex": true,
     "comment-empty-line-before": "always",
     "comment-no-empty": true,
@@ -52,7 +53,7 @@
     # "declaration-property-unit-whitelist": {},
     # "declaration-property-value-blacklist": {},
     # "declaration-property-value-whitelist": {},
-    "font-family-name-quotes": always-where-recommended",
+    "font-family-name-quotes": "always-where-recommended",
     "font-family-no-duplicate-names": true,
     "font-family-no-missing-generic-family-keyword": true,
     "font-weight-notation": "numeric",
