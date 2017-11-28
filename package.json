@@ -1,42 +1,42 @@
 {
-  "name": "cssdojo",
+  "name": "front-end-dojo",
   "version": "0.0.4",
-  "description": "Library full of useful CSS and Sass functions, mixins, utilities, hacks, etc.",
-  "engines": {
-    "node": "7.x",
-    "npm": "4.x"
+  "description": "Library full of useful CSS, Sass, Styled-components, JavaScript, React functions, mixins, utilities, etc.",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexdevero/front-end-dojo.git"
+  },
+  "homepage": "https://github.com/alexdevero/front-end-dojo#readme",
+  "bugs": {
+    "url": "https://github.com/alexdevero/front-end-dojo/issues"
+  },
+  "author": {
+    "name": "Alex Devero",
+    "email": "deveroalex@gmail.com",
+    "url": "https://github.com/alexdevero"
   },
   "keywords": [
     "css",
-    "sass",
     "functions",
-    "mixins",
-    "utilities",
     "hacks",
-    "helpers"
+    "helpers",
+    "javascript",
+    "mixins",
+    "react",
+    "sass",
+    "styled",
+    "styled-components",
+    "utilities"
   ],
-  "homepage": "https://github.com/alexdevero/CSSDojo#readme",
-  "bugs": {
-    "url": "https://github.com/alexdevero/CSSDojo/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Alex Devero",
-    "url": "https://github.com/alexdevero"
-  },
-  "email": "deveroalex@gmail.com",
-  "contributors": [
-    {
-      "name": "contributor",
-      "url": "https://github.com/contributor"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alexdevero/CSSDojo.git"
+  "engines": {
+    "node": ">=8.x",
+    "npm": ">=5.x",
+    "yarn": ">=1.x.x"
   },
   "scripts": {
     "test": "test"
   },
-  "private": false
+  "devDependencies": {}
 }
