@@ -36,7 +36,10 @@
     "yarn": ">=1.x.x"
   },
   "scripts": {
-    "test": "set NODE_ENV=test && eslint ./src/javascript/*.js && csslint ./src/css/*.css && sass-lint -v -q ./src/sass/*.scss"
+    "test": "set NODE_ENV=test && npm run test:css && npm run test:js && npm run test:sass",
+    "test:css": "set NODE_ENV=test && stylelint ./src/css/*.css",
+    "test:js": "set NODE_ENV=test && eslint ./src/javascript/*.js",
+    "test:sass": "set NODE_ENV=test && sass-lint -v -q ./src/sass/*.scss"
   },
   "devDependencies": {
     "eslint": "^4.12.0",
