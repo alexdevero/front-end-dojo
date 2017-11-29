@@ -1,6 +1,6 @@
 {
   "name": "front-end-dojo",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Library full of useful CSS, Sass, Styled-components, JavaScript, React functions, mixins, utilities, etc.",
   "license": "MIT",
   "private": false,
