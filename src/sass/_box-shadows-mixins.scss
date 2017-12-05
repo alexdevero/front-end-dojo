@@ -55,11 +55,18 @@
   }
 }
 
-// Box-shadow used supernova
+// Box-shadow used on supernova
 @mixin box-shadow-supernova($level) {
   @if $level == 1 {
     box-shadow: 0 5px 10px rgba(0, 0, 77, .16);
   } @if $level == 2 {
     box-shadow: 0 15px 10px rgba(0, 0, 77, .16);
+  }
+}
+
+// Box-shadow used on kinsta.com
+@mixin box-shadow-kinsta($level) {
+  @if $level == 1 {
+    box-shadow: 0px 10px 40px 0px rgba(47,47,47,0.1);
   }
 }
