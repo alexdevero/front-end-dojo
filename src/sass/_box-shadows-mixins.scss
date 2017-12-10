@@ -70,3 +70,11 @@
     box-shadow: 0px 10px 40px 0px rgba(47,47,47,0.1);
   }
 }
+
+@mixin box-shadow-udacity($level) {
+  @if $level == 1 {
+    box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
+  } @if $level == 2 {
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, .1);
+  }
+}
