@@ -71,6 +71,7 @@
   }
 }
 
+// Box-shadow used on udacity.com
 @mixin box-shadow-udacity($level) {
   @if $level == 1 {
     box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
