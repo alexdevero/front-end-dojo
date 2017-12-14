@@ -42,7 +42,7 @@ const GridContainer = sc.div`
 
   // Breakpoint for medium desktops
   @media (min-width: 992px) {
-    max-width: ${remy(9600)};
+    max-width: ${remy(960)};
   }
 
   // Breakpoint for large desktops and HD devices
