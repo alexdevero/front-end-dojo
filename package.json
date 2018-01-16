@@ -42,8 +42,8 @@
     "test:sass": "set NODE_ENV=test && sass-lint -v -q ./src/sass/*.scss"
   },
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.15.0",
     "sass-lint": "^1.12.1",
-    "stylelint": "^8.3.1"
+    "stylelint": "^8.4.0"
   }
 }
